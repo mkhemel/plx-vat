@@ -1,15 +1,5 @@
 <!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.2.5
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
+
 <html lang="en">
 	<!--begin::Head-->
 	<head>
@@ -1465,62 +1455,52 @@ License: For each use you must have a valid license purchased only from above li
 										</div>
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										<div class="menu-item">
+										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="vat-paid-list.html">
+											<span class="menu-link">
 												<span class="menu-icon">
-													<i class="ki-duotone ki-bill fs-2">
-														<span class="path1"></span>
-														 <span class="path2"></span>
-														 <span class="path3"></span>
-														 <span class="path4"></span>
-														 <span class="path5"></span>
-														 <span class="path6"></span>
+													<i class="ki-duotone ki-text-align-justify-center fs-2">
+													 <span class="path1"></span>
+													 <span class="path2"></span>
+													 <span class="path3"></span>
+													 <span class="path4"></span>
 													</i>
 												</span>
-												<span class="menu-title">VAT Paid Company</span>
-											</a>
+												<span class="menu-title">History Of Collection</span>
+												<span class="menu-arrow"></span>
+											</span>
 											<!--end:Menu link-->
-										</div>
-										<!--begin:Menu item-->
-										<div class="menu-item">
-											<!--begin:Menu link-->
-											<a class="menu-link" href="vat-unpaid-list.html">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-bill fs-2">
-														<span class="path1"></span>
-														 <span class="path2"></span>
-														 <span class="path3"></span>
-														 <span class="path4"></span>
-														 <span class="path5"></span>
-														 <span class="path6"></span>
-													</i>
-												</span>
-												<span class="menu-title">VAT Unpaid Company</span>
-											</a>
-											<!--end:Menu link-->
-										</div>
-										<!--begin:Menu item-->
-										<div class="menu-item">
-											<!--begin:Menu link-->
-											<a class="menu-link active" href="vat-Subsidy-list.html">
-												<span class="menu-icon">
-													<i class="ki-duotone ki-bill fs-2">
-														<span class="path1"></span>
-														 <span class="path2"></span>
-														 <span class="path3"></span>
-														 <span class="path4"></span>
-														 <span class="path5"></span>
-														 <span class="path6"></span>
-													</i>
-												</span>
-												<span class="menu-title">VAT Subsidy Company</span>
-											</a>
-											<!--end:Menu link-->
+											<!--begin:Menu sub-->
+											<div class="menu-sub menu-sub-accordion">
+												<!--begin:Menu item-->
+												<div class="menu-item">
+													<!--begin:Menu link-->
+													<a class="menu-link" href="vat-collection.html">
+														<span class="menu-bullet">
+															<span class="bullet bullet-dot"></span>
+														</span>
+														<span class="menu-title">VAT History</span>
+													</a>
+													<!--end:Menu link-->
+												</div>
+												<!--end:Menu item-->
+												<!--begin:Menu item-->
+												<div class="menu-item">
+													<!--begin:Menu link-->
+													<a class="menu-link" href="tax-collection.html">
+														<span class="menu-bullet">
+															<span class="bullet bullet-dot"></span>
+														</span>
+														<span class="menu-title">TAX History</span>
+													</a>
+													<!--end:Menu link-->
+												</div>
+											</div>
+											<!--end:Menu sub-->
 										</div>
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link" href="transaction-history.html">
+											<a class="menu-link active" href="transaction-history.html">
 												<span class="menu-icon">
 													<i class="ki-duotone ki-arrow-right-left fs-2">
 														<span class="path1"></span>
@@ -1635,7 +1615,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="card-header border-0">
 													<!--begin::Title-->
 													<div class="card-title">
-														<h3 class="card-label">VAT Subsidy Company List</h3>
+														<h3 class="card-label">Company Settings</h3>
 													</div>
 													<div class="card-toolbar">
 														<!--begin::Filters-->
@@ -1654,30 +1634,14 @@ License: For each use you must have a valid license purchased only from above li
 																<!--begin::Status-->
 																<div class="d-flex align-items-center fw-bold">
 																	<!--begin::Label-->
-																	<div class="text-muted fs-7 me-2">District</div>
-																	<!--end::Label-->
-																	<!--begin::Select-->
-																	<select class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-																		<option selected disabled>Select District</option>
-																		<option value="1">Dhaka</option>
-																		<option value="2">Chattogram</option>
-																		<option value="3">Khulna</option>
-																		<option value="4">Rajshahi</option>
-																		<option value="5">Barishal</option>
-																		<option value="6">Sylhet</option>
-																		<option value="7">Rangpur</option>
-																		<option value="8">Mymensingh</option>
-																	</select>
-																	<!--end::Select-->
-																</div>
-																<div class="d-flex align-items-center fw-bold">
-																	<!--begin::Label-->
-																	<div class="text-muted fs-7 me-2 text-nowrap">Sort By</div>
+																	<div class="text-muted fs-7 me-2 text-nowrap">Industry</div>
 																	<!--end::Label-->
 																	<!--begin::Select-->
 
 																	<select class="form-select form-select-transparent text-gray-900 fs-7 lh-1 fw-bold py-0 ps-3 w-auto" data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option">
-																		<option selected disabled>Select</option>
+																		<option selected>All</option>
+																		<option value="1">Credit</option>
+																		<option value=2>Debit</option>
 																	</select>
 																	<!--end::Select-->
 																</div>
@@ -1696,14 +1660,11 @@ License: For each use you must have a valid license purchased only from above li
 															<thead>
 															<!--begin::Table row-->
 															<tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-																<th class="">Company ID</th>
 																<th class="pe-3">Company Name</th>
-																<th class="pe-3">Registration Date </th>
 																<th class="pe-3">Address</th>
 																<th class="pe-3">Industry</th>
-																<th class="pe-3 ">Status</th>
-																<th class="pe-3">VAT Paid</th>
-																<th class="pe-3">VAT Due</th>
+																<th class="pe-3">TAX</th>
+																<th class="pe-3">VAT</th>
 																<th class="text-end pe-0">Action</th>
 															</tr>
 															<!--end::Table row-->
@@ -1713,273 +1674,86 @@ License: For each use you must have a valid license purchased only from above li
 															<tbody class="fw-bold text-gray-600">
 															<!--begin::Table row-->
 															<tr>
-																<!--begin::Name=-->
-																<td>223480</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Square Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">112M</td>
-																<td class="pe-3 text-danger">11M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
-																</td>
-																<!--end::Action=-->
-															</tr>
-															<tr>
-																<!--begin::Name=-->
-																<td>223481</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Akij Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">69M</td>
-																<td class="pe-3 text-danger">18M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
-																</td>
-																<!--end::Action=-->
-															</tr>
-															<tr>
-																<!--begin::Name=-->
-																<td>223482</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Bashundhara Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">85M</td>
-																<td class="pe-3 text-danger">07M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
-																</td>
-																<!--end::Action=-->
-															</tr>
-															<tr>
-																<!--begin::Name=-->
-																<td>223483</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Walton Hi-Tech Ltd.</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Manufacturing</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">76M</td>
-																<td class="pe-3 text-danger">26M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
-																</td>
-																<!--end::Action=-->
-															</tr>
-															<tr>
-																<!--begin::Name=-->
-																<td>223484</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">City Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">172M</td>
-																<td class="pe-3 text-danger">37M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>British American Tobacco Bangladesh </td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Tobacco</span></td>
+																<td>45%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
 															</tr>
 															<tr>
-																<!--begin::Name=-->
-																<td>223480</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Square Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">112M</td>
-																<td class="pe-3 text-danger">11M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>Square Pharmaceuticals</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">pharmaceuticals</span></td>
+																<td>25%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
-																<!--end::Action=-->
 															</tr>
 															<tr>
-																<!--begin::Name=-->
-																<td>223481</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Akij Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">69M</td>
-																<td class="pe-3 text-danger">18M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>Grameenphone</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Telecom services</span></td>
+																<td>45%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
-																<!--end::Action=-->
 															</tr>
 															<tr>
-																<!--begin::Name=-->
-																<td>223482</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Bashundhara Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">85M</td>
-																<td class="pe-3 text-danger">07M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>Standard Chartered Bank</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Bank</span></td>
+																<td>37.5%</td>
+																<td>0</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
-																<!--end::Action=-->
 															</tr>
 															<tr>
-																<!--begin::Name=-->
-																<td>223483</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">Walton Hi-Tech Ltd.</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Manufacturing</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">76M</td>
-																<td class="pe-3 text-danger">26M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>Renata Limited</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Pharmaceuticals</span></td>
+																<td>25%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
-																<!--end::Action=-->
 															</tr>
 															<tr>
-																<!--begin::Name=-->
-																<td>223484</td>
-																<!--end::Name=-->
-																<!--begin::Email=-->
-																<td class="pe-3">City Group</td>
-																<!--end::Email=-->
-																<!--begin::Phone=-->
-																<td class="pe-3">2021-09-20</td>
-																<!--end::Phone=-->
-																<!--begin::Company=-->
-																<td class="pe-3">Dhaka, Bangladesh</td>
-																<!--end::Company=-->
-																<!--begin::Sector=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Conglomerate</span></td>
-																<!--end::Sector=-->
-																<!--begin::Status=-->
-																<td class="pe-3"><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Active</span></td>
-																<!--end::Status=-->
-																<td class="pe-3 text-success">172M</td>
-																<td class="pe-3 text-danger">37M</td>
-																<!--begin::Action=-->
-																<td class="text-end pe-0">
-																	<a href="company-details.html" class="btn btn-light-primary btn-sm"><i class="fa fa-eye"></i> View</a>
+																<td>Robi Axiata Limited</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Telecom services</span></td>
+																<td>45%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
 																</td>
 															</tr>
+															<tr>
+																<td>MetLife Bangladesh</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Insurance companies</span></td>
+																<td>37.5%</td>
+																<td>0</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
+																</td>
+															</tr>
+															<tr>
+																<td>Beximco Pharmaceuticals</td>
+																<td>Dhaka</td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">Pharmaceuticals</span></td>
+																<td>25%</td>
+																<td>15%</td>
+																<td class="text-end">
+																	<button class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vat-modal"><i class="bi bi-pencil fs-3"></i> Edit</button>
+																</td>
+															</tr>
+
 															<!--end::Table row-->
 
 															</tbody>
@@ -2001,6 +1775,47 @@ License: For each use you must have a valid license purchased only from above li
 															<a class="page-link page-text" href="#">Next</span></a>
 														</li>
 													</ul>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="modal fade" tabindex="-1" id="vat-modal">
+										<div class="modal-dialog modal-md">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h3 class="modal-title">Edit TAX & VAT Rate</h3>
+
+													<!--begin::Close-->
+													<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+														<i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
+													</div>
+													<!--end::Close-->
+												</div>
+
+												<div class="modal-body">
+													<div class="row g-4">
+														<div class="col-lg-12">
+															<label class="form-label">TAX Rate</label>
+															<div class="input-group mb-5">
+																<input type="text" class="form-control" placeholder="Manufacturing" aria-label="Manufacturing" aria-describedby="basic-addon1"/>
+																<span class="input-group-text" id="basic-addon1">%</span>
+															</div>
+														</div>
+														<div class="col-lg-12">
+															<label class="form-label">VAT Rate</label>
+															<div class="input-group mb-5">
+																<input type="text" class="form-control" placeholder="Service" aria-label="Service" aria-describedby="basic-addon2"/>
+																<span class="input-group-text" id="basic-addon2">%</span>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<div class="modal-footer">
+													<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
 												</div>
 											</div>
 										</div>
