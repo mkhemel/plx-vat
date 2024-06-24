@@ -1929,6 +1929,13 @@ License: For each use you must have a valid license purchased only from above li
 													<!--end::Title-->
 												</div>
 												<div class="card-body pt-1">
+													<div class="d-flex justify-content-between align-items-center flex-wrap mb-2 select-action d-none">
+														<p class="mb-1"><span class="selectcount">10</span> transaction select.</p>
+														<select class="form-select form-select-solid form-select-sm w-125px">
+															<option value="1">Unpaid</option>
+															<option value="2">Paid</option>
+														</select>
+													</div>
 													<div class="table-responsive">
 														<!--begin::Table-->
 														<table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_5_table">
@@ -1936,13 +1943,14 @@ License: For each use you must have a valid license purchased only from above li
 															<thead>
 															<!--begin::Table row-->
 															<tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-																<th> <input class="form-check-input" type="checkbox" /> </th>
+																<th> <input class="form-check-input h-20px w-20px" id="checkAll" type="checkbox" /> </th>
 																<th class="">Transaction ID</th>
 																<th class="pe-3">Company Name</th>
 																<th class="pe-3">Address</th>
 																<th class="pe-3">Industry</th>
 																<th class="pe-3">Amount</th>
 																<th class="pe-3">Trans. Type</th>
+																<th class="pe-3">VAT/TAX</th>
 																<th class="pe-3">Status</th>
 																<th class="text-end pe-0">Action</th>
 															</tr>
@@ -1953,143 +1961,154 @@ License: For each use you must have a valid license purchased only from above li
 															<tbody class="fw-bold text-gray-600">
 															<!--begin::Table row-->
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFDFS46</td>
-																<td>Parallaxlogic Infotech</td>
+																<td>Bruvana Group</td>
 																<td>Gulshan Dhaka</td>
 																<td>IT</td>
 																<td>10000</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Credit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">VAT</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFS5446</td>
 																<td>Akij Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Conglomerate</td>
 																<td>360000</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFDFS46</td>
 																<td>Square Group</td>
 																<td>Gulshan Dhaka</td>
 																<td>Construction</td>
 																<td>569920</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Credit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">VAT</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Paid</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFS5446</td>
 																<td>Bashundhara Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Wholesale Trade</td>
 																<td>10000</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Paid</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>546457LK65</td>
 																<td>Walton Hi-Tech Ltd.</td>
 																<td>Gulshan Dhaka</td>
 																<td>Retail</td>
 																<td>33650</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Credit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>74537GJ66</td>
 																<td>City Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Manufacturing</td>
 																<td>45600</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">VAT</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Paid</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFS5446</td>
 																<td>Akij Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Conglomerate</td>
 																<td>360000</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">VAT</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFDFS46</td>
 																<td>Square Group</td>
 																<td>Gulshan Dhaka</td>
 																<td>Construction</td>
 																<td>569920</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Credit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>746HFS5446</td>
 																<td>Bashundhara Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Wholesale Trade</td>
 																<td>10000</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Paid</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>546457LK65</td>
 																<td>Walton Hi-Tech Ltd.</td>
 																<td>Gulshan Dhaka</td>
 																<td>Retail</td>
 																<td>33650</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Credit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-primary">VAT</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-danger">Due</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
 																</td>
 															</tr>
 															<tr>
-																<td><input class="form-check-input" type="checkbox" value="" ></td>
+																<td><input class="form-check-input h-20px w-20px" type="checkbox" value="" ></td>
 																<td>74537GJ66</td>
 																<td>City Group</td>
 																<td>Gulshan, Dhaka</td>
 																<td>Manufacturing</td>
 																<td>45600</td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-warning">Debit</span></td>
+																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-info">TAX</span></td>
 																<td><span class="badge badge-sm py-3 px-4 fs-7 badge-light-success">Paid</span></td>
 																<td class="text-end">
 																	<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
@@ -2135,7 +2154,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Copyright-->
 								<div class="text-gray-900 order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">2024&copy;</span>
-									<a href="https://parallaxlogic.com" target="_blank" class="text-gray-800 text-hover-primary">Parallaxlogic Infotech</a>
+									<a href="https://parallaxlogic.com" target="_blank" class="text-gray-800 text-hover-primary">Kainotomia</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->
@@ -2205,6 +2224,48 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/custom/utilities/modals/new-address.js"></script>
 		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
 		<!--end::Custom Javascript-->
+		<script>
+			document.getElementById('checkAll').addEventListener('change', function() {
+				var checkboxes = document.querySelectorAll('#kt_table_widget_5_table input[type="checkbox"]');
+				var selectAction = document.querySelector('.select-action');
+				var selectCount = document.querySelector('.selectcount');
+				var checkedCount = 0;
+				for (var checkbox of checkboxes) {
+					checkbox.checked = this.checked;
+					if (checkbox.checked) {
+						checkedCount++;
+					}
+				}
+				if(this.checked){
+					selectAction.classList.remove('d-none');
+				} else {
+					selectAction.classList.add('d-none');
+				}
+				selectCount.textContent = checkedCount;
+			});
+			var checkboxes = document.querySelectorAll('#kt_table_widget_5_table input[type="checkbox"]');
+			var selectAction = document.querySelector('.select-action');
+			var selectCount = document.querySelector('.selectcount');
+
+			function updateSelectActionAndCount() {
+				var checkedCount = 0;
+				for (var checkbox of checkboxes) {
+					if (checkbox.checked) {
+						checkedCount++;
+					}
+				}
+				if(checkedCount > 0){
+					selectAction.classList.remove('d-none');
+				} else {
+					selectAction.classList.add('d-none');
+				}
+				selectCount.textContent = checkedCount;
+			}
+
+			for (var checkbox of checkboxes) {
+				checkbox.addEventListener('change', updateSelectActionAndCount);
+			}
+		</script>
 		<script>
 			var KTChartsWidget199 = (function () {
 				// Private methods

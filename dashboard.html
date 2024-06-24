@@ -3895,7 +3895,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Copyright-->
 								<div class="text-gray-900 order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">2024&copy;</span>
-									<a href="https://parallaxlogic.com" target="_blank" class="text-gray-800 text-hover-primary">Parallaxlogic Infotech</a>
+									<a href="https://parallaxlogic.com" target="_blank" class="text-gray-800 text-hover-primary">Kainotomia</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->
@@ -4885,18 +4885,33 @@ License: For each use you must have a valid license purchased only from above li
 			var warningColor = KTUtil.getCssVariableValue('--kt-warning');
 			var infoColor = KTUtil.getCssVariableValue('--kt-info');
 
+			var colors = [
+				"#009EF7",
+				"#F1416C",
+				"#1abc9c", // Turquoise
+				"#2ecc71", // Emerald
+				"#3498db", // Peter River
+				"#9b59b6", // Amethyst
+				"#34495e", // Wet Asphalt
+				"#f1c40f", // Sun Flower
+				"#e67e22", // Carrot
+				"#e74c3c", // Alizarin
+				"#95a5a6", // Concrete
+				"#16a085"  // Green Sea
+			];
 			// Define fonts
 			var fontFamily = KTUtil.getCssVariableValue('--bs-font-sans-serif');
 
 			// Chart labels
-			const labels = ['IT', 'Garments', 'Pharmaceuticals', 'Manufacturing', 'Retail', 'Wholesale Trade', 'Construction', 'Transportation & Logistics', 'Agriculture', 'Real Estate', 'Others'];
+			const labels = ['IT', 'Garments', 'Pharmaceuticals', 'Manufacturing','Agriculture', 'Real Estate', 'Others', 'Retail', 'Wholesale Trade', 'Construction', 'Transportation & Logistics'];
 
 			// Chart data
 			const data = {
 				labels: labels,
 				datasets: [{
 					label: 'TAX',
-					data: [506799, 203612, 194736, 737263,3423432,323275,456738,456743],
+					data: [123456, 789012, 345678, 901234, 567890,506799, 203612, 194736, 123456, 789012, 345678],
+					backgroundColor: colors,
 					hoverOffset: 4
 				}]
 			};
@@ -4935,7 +4950,20 @@ License: For each use you must have a valid license purchased only from above li
 			var successColor = KTUtil.getCssVariableValue('--kt-success');
 			var warningColor = KTUtil.getCssVariableValue('--kt-warning');
 			var infoColor = KTUtil.getCssVariableValue('--kt-info');
-
+			var colors = [
+				"#009EF7",
+				"#F1416C",
+				"#1abc9c", // Turquoise
+				"#2ecc71", // Emerald
+				"#3498db", // Peter River
+				"#9b59b6", // Amethyst
+				"#34495e", // Wet Asphalt
+				"#f1c40f", // Sun Flower
+				"#e67e22", // Carrot
+				"#e74c3c", // Alizarin
+				"#95a5a6", // Concrete
+				"#16a085"  // Green Sea
+			];
 			// Define fonts
 			var fontFamily = KTUtil.getCssVariableValue('--bs-font-sans-serif');
 
@@ -4947,7 +4975,8 @@ License: For each use you must have a valid license purchased only from above li
 				labels: labels1,
 				datasets: [{
 					label: 'VAT',
-					data: [506799, 203612, 194736, 737263,3423432,323275,456738,456743],
+					data: [506799, 203612, 194736, 737263,3423432,323275,456738,456743,3423432,194736, 737263,],
+					backgroundColor: colors,
 					hoverOffset: 4
 				}]
 			};
